@@ -1,12 +1,5 @@
 /* ---------------------------------------
 
-[Master Stylesheet]
-
-Project:    Intenax - HTML Template
-Version:    1
-Last Change:    25/4/2019
-Primary Use:    Architecture and Renovation
-
 ------------------------------------------
 
 [Table of contents]
@@ -80,6 +73,13 @@ font-family: 'Montserrat', sans-serif;
 @import url('simple-line-icons.css');
 @import url('jquery.fancybox.min.css');
 @import url('jquery.mCustomScrollbar.min.css');
+@import url('https://css.gg/dark-mode.css');
+@import url('https://css.gg/math-minus.css');
+@import url('https://css.gg/math-plus.css');
+@import url('https://css.gg/insert-after.css');
+@import url('https://css.gg/format-uppercase.css');
+@import url('https://css.gg/toggle-off.css');
+@import url('https://css.gg/search.css');
 
 /*** 
 
@@ -123,6 +123,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 }
+
 
 .bordered-layout .page-wrapper{
 	padding:0px 50px 0px;
@@ -296,7 +297,7 @@ img{
 .list-style-one li{
 	position:relative;
 	color:#666666;
-	font-size:14px;
+	font-size:17px;
 	font-weight:400;
 	line-height:1.8em;
 	margin-bottom:6px;
@@ -641,7 +642,12 @@ img{
 
 .main-header .header-top .top-left{
 	position: relative;
-	float: left;
+	float: right;
+}
+
+.main-header .header-top .top-right-2{
+	position: relative;
+	float: right;
 }
 
 .main-header .header-top .top-left .info-list{
@@ -776,7 +782,7 @@ img{
 	float: left;
 	width:100%;
 	margin-top:-100px;
-	text-align:center;
+	text-align:right;
 	transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -1089,7 +1095,7 @@ img{
 	left:0px;
 	top:100%;
 	margin-top: 10px;
-	width:210px;
+	width:225px;
 	z-index:100;
 	display:none;
 	opacity: 0;
@@ -1422,7 +1428,7 @@ img{
 }
 
 .header-style-three .main-menu .navigation > li > a:before{
-	bottom:34px;
+	bottom:20px;
 }
 
 .header-style-three .header-upper .outer-box .search-box-btn{
@@ -1785,7 +1791,7 @@ img{
 	top:20%;
 	margin-top:-100px;
 	z-index:99;
-	padding:25px 10px 1px;
+	padding:25px 10px 25px;
 	border:1px solid #85744f;
 	border-right:none;
 	background-color:#ffffff;
@@ -2607,6 +2613,15 @@ img{
 	box-shadow:0px 0px 25px rgba(0,0,0,0.10);
 }
 
+.story-block .inner-box .content-column .inner-column1{
+	position:relative;
+	padding:40px 60px 40px;
+	z-index:1;
+	margin-right:-220px;
+	background-color:#ffffff;
+	box-shadow:0px 0px 25px rgba(0,0,0,0.10);
+}
+
 .story-block .inner-box .content-column .inner-column .text{
 	position:relative;
 }
@@ -2777,6 +2792,16 @@ img{
 .product-tab-section .content-box .inner-content{
 	position:relative;
 	max-width:770px;
+	z-index:1;
+	margin-left:100px;
+	padding:70px 110px 70px;
+	background-color:#ffffff;
+	box-shadow:0px 0px 35px rgba(0,0,0,0.15);
+}
+
+.product-tab-section .content-box .inner-content2{
+	position:relative;
+	max-width:990px;
 	z-index:1;
 	margin-left:100px;
 	padding:70px 110px 70px;
@@ -4919,7 +4944,7 @@ img{
 }
 
 .services-section-two .left-column .inner-column .sec-title{
-	margin-bottom:90px;
+	margin-bottom:40px;
 }
 
 .services-section-two .left-column h3{
@@ -5180,7 +5205,7 @@ img{
 
 .services-block-five .inner-box .content-column .inner-column{
 	position:relative;
-	padding-top:60px;
+	padding-top:30px;
 }
 
 .services-block-five .inner-box .content-column{
@@ -6497,7 +6522,6 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background-color:rgba(48,48,48,0.90);
 }
 
 .branded-section .title-box .sec-title .title{
@@ -7438,7 +7462,7 @@ img{
 
 .product-block-four .inner-box .lower-content h3{
 	position:relative;
-	font-size:18px;
+	font-size:17px;
 	font-weight:600;
 	line-height:1.3em;
 	
@@ -7868,14 +7892,14 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background-color:rgba(0,0,0,0.70);
+	background-color:rgba(0,0,0,0.30);
 }
 
 .page-title h2{
 	position:relative;
 	color:#ffffff;
 	font-weight:600;
-	font-size:48px;
+	font-size:60px;
 	line-height:1.3em;
 }
 
@@ -7891,13 +7915,13 @@ img{
 .page-title .page-breadcrumb{
 	position:relative;
 	color:rgba(255,255,255,0.70);
-	margin-top:90px;
+	margin-top:20px;
 	font-family: 'Segoe UI',  sans-serif;
 }
 
 .page-title .page-breadcrumb li{
 	position:relative;
-	font-size:14px;
+	font-size:20px;
 	padding-right:10px;
 	margin-right:10px;
 	text-transform:capitalize;
@@ -8884,7 +8908,7 @@ img{
 
 .contact-info-section{
 	position:relative;
-	padding:60px 0px 90px;
+	padding:60px 0px 0px;
 }
 
 .contact-info-section.style-two{
@@ -10307,23 +10331,6 @@ img{
 	cursor: pointer;
 }
 
-
-
-body.dark {
-    background-color: #292c35;
-   
-  }
-
-  body.dark h2{ color: #fff !important;}
-  body.dark .inner-container{background-color: #292c35 !important;}
-  body.dark .outer-box{background-color: #292c35 !important;}
-  body.dark .outer-box-1{background-color: #292c35 !important;}
-  body.dark .ch_co{
-	filter: invert(100%);
-	-webkit-filter: invert(100%);
-  }
-  body.dark .product-tab-section::after{background-color: #292c35 !important;}
-
 .toggle-label {
     width: 20px;
     height: 14px;
@@ -10333,13 +10340,13 @@ body.dark {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-  position: absolute;
-    right: 1px;
-    top: 1px;
+  
+    right: 15px;
+    top: 15px;
     transform: scale(1.5);
 }
 
-.fa-moon {
+fa-moon {
     color: pink;
     font-size: 6px;
 }
@@ -10360,21 +10367,8 @@ body.dark {
     transition: transform 0.2s linear;
 }
 
-.toggle-checkbox:checked + .toggle-label .ball{
-    transform: translateX(7px);
-    z-index: 9999;
-  }
-
-  .toggle-checkbox:checked + .dark{
-    color: #fff;
-  }
-  
-
 input[type="radio"], input[type="checkbox"] {
     display: inline;
-	position: absolute;
-    right: 5px;
-    top: 1px;
 }
 
 .main-header .header-upper .outer-box-1{

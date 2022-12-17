@@ -14,8 +14,8 @@
 
 ?>
 
-	<!-- Main Footer -->
-	<footer class="main-footer">
+<!-- Main Footer -->
+<footer class="main-footer">
     	<div class="auto-container">
         	<!--Widgets Section-->
             <div class="widgets-section">
@@ -42,11 +42,11 @@
                                 <div class="footer-widget links-widget">
 									<h2>Links</h2>
 									<ul class="footer-list">
-										<li><a href="#">About us</a></li>
-										<li><a href="#"> Our investment strategy</a></li>
-										<li><a href="#">Risk strategies</a></li>
-										<li><a href="#">Contact Us</a></li>
-										<li><a style="color:#e9c37a" href="#">Employees Login</a></li>
+									<li><a href="<?php echo home_url(); ?>/about-us/introduction/">About us</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-us/our-investment-strategy/">Our investment strategy</a></li>
+										<li><a href="<?php echo home_url(); ?>/our-business/real-estate-risk-strategies/">Risk strategies</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-us/contact-us/">Contact Us</a></li>
+										<li><a href="#">Employees Login</a></li>
 									</ul>
 								</div>
 							</div>
@@ -64,9 +64,9 @@
                                 <div class="footer-widget contact-widget">
 									<h2>Contact</h2>
 									<ul class="contact-list">
-										<li>Phone: <a href="tel:+12345018607">+966 11 419 4499</a></li>
-										<li>Email: <span><a href="mailto:info@awjholding.com">info@awjholding.com</a></li>
-										<li><a href="mailto:careers@awjholding.com">careers@awjholding.com</a></li>
+										<li>Phone : <span><a href="tel:+12345018607">+966 11 419 4499</a></span></li>
+										<li>Email : <span><a href="mailto:info@intenax.net">info@awjholding.com</a></span></li>
+										<li><a href="mailto:info@intenax.net">careers@awjholding.com</a></li>
 									</ul>
 								</div>
 							</div>
@@ -88,39 +88,46 @@
 				</div>
 			</div>
 		</div>
+		<!-- Footer Bottom Image -->
 	</footer>
+	
 </div>
-
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 <!--End pagewrapper-->
-<script>
-const checkbox = document.getElementById('toggle-checkbox');
 
-checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('dark');
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 
-})
-</script>
-
-
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+	<div class="close-search theme-btn"><span class="flaticon-cancel-1"></span></div>
+	<div class="popup-inner">
+		<div class="overlay-layer"></div>
+    	<div class="search-form">
+        	<form method="post" action="index.html">
+            	<div class="form-group">
+                	<fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+            
+            <br>
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        
+        </div>
+        
+    </div>
+</div>
 
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/popper.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-
-<!--Revolution Slider-->
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/main-slider-script.js"></script>
 
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.scrollTo.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/appear.js"></script>
@@ -131,26 +138,34 @@ checkbox.addEventListener('change', ()=>{
 <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/paroller.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/inc-dec.js"></script>
 
-<!-- <script src="<?php bloginfo('template_url'); ?>/js-2/jquery-3.6.0.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery-migrate-3.0.0.min.js"></script> -->
-    <script src="<?php bloginfo('template_url'); ?>/js-2/modernizr-2.6.2.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/imagesloaded.pkgd.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.isotope.v3.0.2.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/pace.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/popper.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/bootstrap.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/scrollIt.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.waypoints.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/owl.carousel.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.stellar.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.magnific-popup.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/YouTubePopUp.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/select2.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/datepicker.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/smooth-scroll.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js-2/custom.js"></script>
+<!-- Jquery JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery-3.5.1.min.js"></script>
+
+<!-- Bootstrap JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/popper.min.js"></script>
+
+<!-- Font Awesome JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/font-awesome.min.js"></script>
+
+<!-- Swiper Slider JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/swiper-bundle.min.js"></script>
+
+<!-- Wow Animation JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/wow.min.js"></script>
+
+<!-- Fancybox JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.fancybox.min.js"></script>
+
+<!-- Counter JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/custom-scroll-count.js"></script>
+
+<!-- Mixitup js Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.mixitup.min.js"></script>
+
+<!-- Custom JS Link -->
+<script src="<?php bloginfo('template_url'); ?>/assets/js/custom.js"></script>
 
 </body>
 </html>

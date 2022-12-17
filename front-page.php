@@ -1,12 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AWJ | Home Page</title>
+<!--By: MADA Aljuaid-->
+<!-- Stylesheets -->
+<link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
+<link href="<?php bloginfo('template_url'); ?>/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="<?php bloginfo('template_url'); ?>/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="<?php bloginfo('template_url'); ?>/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
 
-<?php get_header(); ?>
+<link href="<?php bloginfo('template_url'); ?>/css/style.css" rel="stylesheet">
+<link href="<?php bloginfo('template_url'); ?>/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css-2/plugins.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css-2/style.css" />
 
-    
-<section class="main-slider home-three">
+<script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/jquery.min.js"></script>
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/scripts/bootstrap/css/bootstrap.css">
+<script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/script.js"></script>
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/style.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/css/content-box.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/css/image-box.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/css/animations.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/css/components.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/scripts/flexslider/flexslider.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/scripts/magnific-popup.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/scripts/php/contact-form.css">
+<link rel="icon" href="<?php bloginfo('template_url'); ?>/../images/favicon.png">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../skin.css">
+
+<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<!---------------------------- Start Main Header ------------------------------->
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Three-->
+    <header class="main-header header-style-three">
+    	
+		<div class="header-top">
+            <div class="auto-container clearfix">
+			
+				<!-- Top Left -->
+                <div class="top-left clearfix">
+                    <!-- Info List -->
+					<ul class="info-list clearfix">
+                        <li class="gg-dark-mode"></li>
+						<li class="gg-insert-after"></li>
+                    </ul>
+                </div>
+				
+				<!-- Top Right -->
+                <div class="top-right clearfix">
+				
+					<!-- Social Links -->
+					
+                </div>
+            </div>
+        </div>
+
+
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="inner-container clearfix">
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="index.php"><img src="<?php bloginfo('template_url'); ?>/images/Logo-02.png" alt="" title=""></a></div>
+                    </div>
+                   	
+					<div class="nav-outer clearfix">
+                    
+						<!--Mobile Navigation Toggler For Mobile-->
+                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu-4"></span></div>
+
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+
+							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+								<li class="dropdown"><a href="#">ABOUT US</a>
+										<ul>
+											<li><a href="<?php echo home_url(); ?>/about-us/introduction/">Introduction</a></li>
+											<li><a href="<?php echo home_url(); ?>/about-us/our-ethos/">Our ethos</a></li>
+											<li><a href="<?php echo home_url(); ?>/about-us/our-investment-strategy/">Our investment strategy</a></li>
+											<li><a href="<?php echo home_url(); ?>/about-us/our-impact/">Our impact</a></li>
+											<li><a href="<?php echo home_url(); ?>/about-us/contact-us/">Contact us</a></li>
+										</ul>
+									</li>
+									<li><a href="<?php echo home_url(); ?>/our-governance/">OUR GOVERNANCE</a></li>
+
+									<li class="dropdown"><a href="#">OUR PEOPLE</a>
+										<ul>
+											<li><a href="<?php echo home_url(); ?>/our-people/leadership/">Leadership</a></li>
+											<li><a href="<?php echo home_url(); ?>/our-people/board-of-directors/">Board of Directors</a></li>
+											<li><a href="<?php echo home_url(); ?>/our-people/investment-committee/">Investment Committee</a></li>
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">OUR BUSINESS</a>
+										<ul>
+											<li><a href="<?php echo home_url(); ?>/our-business/introduction/">Introduction</a></li>
+											<li><a href="<?php echo home_url(); ?>/our-business/our-investment-platforms/">Investment platforms </a></li>
+											<li><a href="<?php echo home_url(); ?>/our-business/real-estate-risk-strategies/">Risk strategies</a></li>
+                                            <li><a href="<?php echo home_url(); ?>/our-business/our-portfolio/">Our portfolio</a></li>
+										</ul>
+									</li>
+									<li><a href="<?php echo home_url(); ?>/careers/">CAREERS</a></li>
+                                </ul>
+                            </div>
+						</nav>
+						<!-- Main Menu End-->
+
+						<!--<div class="font_toggle">
+							<button id="f_dec" onclick="dec_font()">a</button>
+							<button id="f_inc" onclick="inc_font()">A</button>
+						</div>-->
+						<div class="outer-box">
+							<div class="search-box-btn"><li class="gg-search" style="margin-top:0px"></li></div>
+						</div>
+						<div class="outer-box">
+							<div class="lang-box-btn">Ar</div>
+						</div>
+				</div>
+            </div>
+        </div>
+    </div>
+        <!--End Header Upper-->
+        
+		<!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="" class="img-responsive"><img src="<?php bloginfo('template_url'); ?>/images/Logo-04.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+					<!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md">
+                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                            <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript-->
+                        </div>
+						<li class="gg-search" style="margin-top:-45px"></li>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+		
+    <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
+            
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+            	<div class="nav-logo"><a href=""><img src="<?php bloginfo('template_url'); ?>/images/nav-logo.png" alt="" title=""></a></div>
+                
+                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+    </header>
+    <section class="main-slider home-three">
         
         <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_two_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_two" data-version="5.4.1">
-			<ul>
+                <ul>
                     
                     <li data-transition="slidingoverlayvertical" data-description="Slide Description"  data-index="rs-1688" data-slotamount="default" data-thumb="<?php bloginfo('template_url'); ?>/images/main-slider/3-3.jpg" data-title="Slide Title">
                     <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php bloginfo('template_url'); ?>/images/main-slider/3-3.jpg">
@@ -206,97 +387,8 @@
                 </ul>
             </div>
         </div>
-		<div class="social-links">
-            <ul>
-			<style>
-									.font_toggle {
-										position: absolute;
-										display: flex;
-										column-gap: 6px;
-										/* padding-top: 10px; */
-									}
-									.font_toggle button {
-										/* font-size: 20px; */
-										/* width: 30px;
-										height: 30px; */
-										/* border: 1px solid; */
-										padding: 0;
-										cursor: pointer;
-										/* box-sizing: border-box; */
-										line-height: inherit;
-									}
-									/* .font_toggle button:hover{
-										background-color: #000;
-										color: #fff;
-									} */
-									/* body.dark .font_toggle button{
-										border: 1px solid #847979;
-										color:#847979
-									} */
-									/* body.dark .font_toggle button:hover{
-										border: 1px solid #fff;
-										color:#fff
-									} */
-									@media(max-width:640px){
-										.font_toggle {
-											
-											right: 15px;
-										}
-									}
-								</style>
-							<script>
-									let initialZoom = 1;
-									let currentZoom = initialZoom;
-									let maxZoom = 1.7;
-									function inc_font(){
-										currentZoom = currentZoom + .01
-										if(currentZoom>=maxZoom) currentZoom = maxZoom;
-										document.body.style.zoom = currentZoom
-										document.body.style.transform = "scale("+currentZoom+")"
-									}
-									function dec_font(){
-										currentZoom = currentZoom - .01
-										if(currentZoom<=initialZoom) currentZoom = initialZoom;
-										document.body.style.zoom = currentZoom
-										document.body.style.transform = "scale("+currentZoom+")"
-									}
-								</script>
-							
-    			
-				<li class="text-resizer">
-					<span class="small-text">A</span>
-					<span class="large-text" style="margin-left: 2px;">A</span>
-					<span class="rectangle"></span>
-				</li>
-				<!-- <div class="font_toggle">
-									<button id="f_dec" onclick="dec_font()" class="small-text">A</button>
-									<button id="f_inc" onclick="inc_font()" class="large-text">A</button>
-									<span class="rectangle"></span>
-								</div> -->
-					<!-- <span id="f_dec" onclick="dec_font()" class="small-text">A</span>
-					<span id="f_inc" onclick="inc_font()" class="large-text" style="margin-left: 2px;">A</span> -->
-					
-			
-							
-				<br>
-				<div style="position: relative;
-							padding: 50px 0px 6px;
-							font-size: 18px;
-							margin-left: 25px;
-							color: #e9c37a;
-							cursor: pointer;
-							float: left;">
-				<input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
-							<label for="toggle-checkbox" class="toggle-label">
-								<i class="fas fa-moon"></i>
-								<i class="fas fa-sun"></i>
-								<div class="ball"></div>
-							 </label>
-				</div>
-            </ul>
-		</div>
+		
     </section>
-
 
     <!----------------------------End Main Slider---------------------------------->
 
@@ -306,7 +398,7 @@
 		<div class="auto-container">
 						<!-- Story Block -->
 						<div class="story-block">
-							<!-- <div class="pattern-layer" style="background-image:url(images/background/pattern-3.png)"></div> -->
+							<!--<div class="pattern-layer" style="background-image:url(images/background/pattern-3.png)"></div>-->
 							<div class="inner-box">
 								<div class="clearfix">
 									
@@ -341,7 +433,7 @@
 						</div>
 			<!-- Story Block Two -->
 			<div class="story-block-two">
-				<!-- <div class="pattern-layer" style="background-image:url(<?php bloginfo('template_url'); ?>/images/background/pattern-1.png)"></div> -->
+				<!--<div class="pattern-layer" style="background-image:url(images/background/pattern-1.png)"></div>-->
 				<div class="inner-box">
 					<div class="clearfix">
 						
@@ -481,8 +573,6 @@
 		</div>
 	</section>
 
-
-
 	<!--------------------------- End 2030 vision ----------------------------->
 	<section class="product-tab-section"></section>
 	<!--------------------------- Sponsors Section ---------------------------->
@@ -493,18 +583,181 @@
 				<div class="sponsors-outer">
 					<!--Sponsors Carousel-->
 					<ul class="sponsors-carousel owl-carousel owl-theme">
-						<li class="slide-item"><figure class="image-box"><a href="#"><img class="ch_co" src="<?php bloginfo('template_url'); ?>/img/c1.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img class="ch_co" src="<?php bloginfo('template_url'); ?>/img/c2.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img class="ch_co" src="<?php bloginfo('template_url'); ?>/img/c3.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img class="ch_co" src="<?php bloginfo('template_url'); ?>/img/c4.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img class="ch_co" src="<?php bloginfo('template_url'); ?>/img/c5.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img class="ch_co" src="<?php bloginfo('template_url'); ?>/img/c6.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/c1.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/c5.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/c6.png" alt=""></a></figure></li>
 					</ul>
 				</div>
 				
 			</div>
 		</section>
 		
+	<!--------------------------- Sponsors Section ---------------------------->
+
+	<!----------------------------- Start Footer ------------------------------>
+	
+	<!-- Main Footer -->
+    <footer class="main-footer">
+    	<div class="auto-container">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!--Column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+						
+                        	<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+									<ul class="social-links">
+										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+									</ul>
+									<div class="copyright"><span>AWJ Holding Company</span> <br> &copy; All rights reserved.</div>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h2>Links</h2>
+									<ul class="footer-list">
+										<li><a href="<?php echo home_url(); ?>/about-us/introduction/">About us</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-us/our-investment-strategy/">Our investment strategy</a></li>
+										<li><a href="<?php echo home_url(); ?>/our-business/real-estate-risk-strategies/">Risk strategies</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-us/contact-us/">Contact Us</a></li>
+										<li><a href="#">Employees Login</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!--Column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+							
+							
+                        	<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget contact-widget">
+									<h2>Contact</h2>
+									<ul class="contact-list">
+										<li>Phone : <span><a href="tel:+12345018607">+966 11 419 4499</a></span></li>
+										<li>Email : <span><a href="mailto:info@intenax.net">info@awjholding.com</a></span></li>
+										<li><a href="mailto:info@intenax.net">careers@awjholding.com</a></li>
+									</ul>
+								</div>
+							</div>
 
 
-<?php get_footer(); ?>
+                        	<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget contact-widget">
+									<h2>VISIT</h2>
+									<ul class="contact-list">
+										<li>7586 King Fahd Branch Road</li>
+										<li>–ArRahmaniyah Unit No.</li>
+										<li>6743 ArRiyadh 12341 -4119</li>
+									</ul>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<!--End pagewrapper-->
+
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+	<div class="close-search theme-btn"><span class="flaticon-cancel-1"></span></div>
+	<div class="popup-inner">
+		<div class="overlay-layer"></div>
+    	<div class="search-form">
+        	<form method="post" action="index.html">
+            	<div class="form-group">
+                	<fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/popper.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+
+<!--Revolution Slider-->
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/main-slider-script.js"></script>
+
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.scrollTo.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/appear.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.fancybox.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/owl.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/wow.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/paroller.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/inc-dec.js"></script>
+
+<script src="<?php bloginfo('template_url'); ?>/js-2/jquery-3.6.0.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery-migrate-3.0.0.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/modernizr-2.6.2.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/imagesloaded.pkgd.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.isotope.v3.0.2.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/pace.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/popper.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/scrollIt.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.waypoints.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/owl.carousel.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.stellar.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/jquery.magnific-popup.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/YouTubePopUp.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/select2.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/datepicker.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/smooth-scroll.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js-2/custom.js"></script>
+
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/../HTWF/scripts/font-awesome/css/font-awesome.css">
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/imagesloaded.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/parallax.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/flexslider/jquery.flexslider-min.js"></script>
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/isotope.min.js"></script>
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/php/contact-form.js"></script>
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/jquery.progress-counter.js"></script>
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/jquery.tab-accordion.js"></script>
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/bootstrap/js/bootstrap.popover.min.js"></script>
+        <script async src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/jquery.magnific-popup.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/social.stream.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/jquery.slimscroll.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/google.maps.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/smooth.scroll.min.js"></script>
+</body>
+</html>
