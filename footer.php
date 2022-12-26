@@ -96,29 +96,31 @@
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
-
+<script>
+	const checkbox = document.getElementById('toggle-checkbox');
+	
+	checkbox.addEventListener('change', ()=>{
+	  document.body.classList.toggle('dark');
+	
+	})
+	</script>
 <!--Search Popup-->
 <div id="search-popup" class="search-popup">
 	<div class="close-search theme-btn"><span class="flaticon-cancel-1"></span></div>
 	<div class="popup-inner">
 		<div class="overlay-layer"></div>
     	<div class="search-form">
-        	<form method="post" action="index.html">
+        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url(); ?>">
             	<div class="form-group">
                 	<fieldset>
-                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="search" class="form-control" name="s" value="" placeholder="Search Here" required >
                         <input type="submit" value="Search Now!" class="theme-btn">
                     </fieldset>
                 </div>
             </form>
             
-            <br>
-            <h3>Recent Search Keywords</h3>
-            <ul class="recent-searches">
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">SEO</a></li>
-            </ul>
+           
+            
         
         </div>
         

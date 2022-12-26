@@ -56,15 +56,39 @@
 				<!-- Top Left -->
                 <div class="top-left clearfix">
                     <!-- Info List -->
+					<script>
+									let initialZoom = 1;
+									let currentZoom = initialZoom;
+									let maxZoom = 1.7;
+									function inc_font(){
+										currentZoom = currentZoom + .01
+										if(currentZoom>=maxZoom) currentZoom = maxZoom;
+										document.body.style.zoom = currentZoom
+										document.body.style.transform = "scale("+currentZoom+")"
+									}
+									function dec_font(){
+										currentZoom = currentZoom - .01
+										if(currentZoom<=initialZoom) currentZoom = initialZoom;
+										document.body.style.zoom = currentZoom
+										document.body.style.transform = "scale("+currentZoom+")"
+									}
+								</script>
+								<div class="font_toggle" style="z-index:9999">
+									<!-- <button id="f_dec" onclick="dec_font()">-</button>
+									<button id="f_inc" onclick="inc_font()">+</button> -->
+								</div>
 					<ul class="info-list clearfix">
                         <li class="gg-dark-mode"></li>
+						
+						<!-- <a id="f_inc" onclick="inc_font()"> -->
 						<li class="gg-insert-after"></li>
+					<!-- </a> -->
                     </ul>
                 </div>
 				
 				<!-- Top Right -->
                 <div class="top-right clearfix">
-				
+				<input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
 					<!-- Social Links -->
 					
                 </div>
@@ -77,7 +101,8 @@
         	<div class="auto-container">
             	<div class="inner-container clearfix">
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.php"><img src="<?php bloginfo('template_url'); ?>/images/Logo-02.png" alt="" title=""></a></div>
+                    	<div class="logo fordark"><a href="index.php"><img class="for-dark" src="<?php bloginfo('template_url'); ?>/images/Logo-02.png" alt="" title=""></a></div>
+						
                     </div>
                    	
 					<div class="nav-outer clearfix">
@@ -98,7 +123,7 @@
 
 							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-								<li class="dropdown"><a href="#">ABOUT US</a>
+								<li class="dropdown"><a href="<?php echo home_url(); ?>/about-us/introduction/">ABOUT US</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/about-us/introduction/">Introduction</a></li>
 											<li><a href="<?php echo home_url(); ?>/about-us/our-ethos/">Our ethos</a></li>
@@ -109,14 +134,14 @@
 									</li>
 									<li><a href="<?php echo home_url(); ?>/our-governance/">OUR GOVERNANCE</a></li>
 
-									<li class="dropdown"><a href="#">OUR PEOPLE</a>
+									<li class="dropdown"><a href="<?php echo home_url(); ?>/our-people/leadership/">OUR PEOPLE</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/our-people/leadership/">Leadership</a></li>
 											<li><a href="<?php echo home_url(); ?>/our-people/board-of-directors/">Board of Directors</a></li>
 											<li><a href="<?php echo home_url(); ?>/our-people/investment-committee/">Investment Committee</a></li>
 										</ul>
 									</li>
-									<li class="dropdown"><a href="#">OUR BUSINESS</a>
+									<li class="dropdown"><a href="<?php echo home_url(); ?>/our-business/introduction/">OUR BUSINESS</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/our-business/introduction/">Introduction</a></li>
 											<li><a href="<?php echo home_url(); ?>/our-business/our-investment-platforms/">Investment platforms </a></li>
@@ -145,13 +170,26 @@
         </div>
     </div>
         <!--End Header Upper-->
-        
+        <style>
+			.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-right: -24px !important;
+    float: right;
+}
+		</style>
 		<!--Sticky Header-->
         <div class="sticky-header">
         	<div class="auto-container clearfix">
             	<!--Logo-->
             	<div class="logo pull-left">
-                	<a href="" class="img-responsive"><img src="<?php bloginfo('template_url'); ?>/images/Logo-04.png" alt="" title=""></a>
+                	<a href="<?php echo home_url(); ?>" class="img-responsive"><img src="<?php bloginfo('template_url'); ?>/images/Logo-04.png" alt="" title=""></a>
                 </div>
                 
                 <!--Right Col-->
@@ -176,7 +214,7 @@
             
             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             <nav class="menu-box">
-            	<div class="nav-logo"><a href=""><img src="<?php bloginfo('template_url'); ?>/images/nav-logo.png" alt="" title=""></a></div>
+            	<div class="nav-logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/nav-logo.png" alt="" title=""></a></div>
                 
                 <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
             </nav>
@@ -583,9 +621,9 @@
 				<div class="sponsors-outer">
 					<!--Sponsors Carousel-->
 					<ul class="sponsors-carousel owl-carousel owl-theme">
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/c1.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/c5.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/c6.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img class="change_logo_color" src="<?php bloginfo('template_url'); ?>/img/c1.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img class="change_logo_color" src="<?php bloginfo('template_url'); ?>/img/c5.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img class="change_logo_color" src="<?php bloginfo('template_url'); ?>/img/c6.png" alt=""></a></figure></li>
 					</ul>
 				</div>
 				
@@ -675,17 +713,26 @@
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 <!--End pagewrapper-->
-
+<script>
+	const checkbox = document.getElementById('toggle-checkbox');
+	
+	checkbox.addEventListener('change', ()=>{
+	  document.body.classList.toggle('dark');
+	
+	})
+	</script>
 <!--Search Popup-->
 <div id="search-popup" class="search-popup">
 	<div class="close-search theme-btn"><span class="flaticon-cancel-1"></span></div>
 	<div class="popup-inner">
 		<div class="overlay-layer"></div>
     	<div class="search-form">
-        	<form method="post" action="index.html">
+        	
+			<form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url(); ?>">
             	<div class="form-group">
                 	<fieldset>
-                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+				
+                        <input type="search" class="form-control" name="s" value="" placeholder="Search Here" required >
                         <input type="submit" value="Search Now!" class="theme-btn">
                     </fieldset>
                 </div>

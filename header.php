@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>AWJ <?php wp_title( '|', true, 'left' ); ?></title>
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!-- Stylesheets -->
 <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
 
@@ -33,8 +35,6 @@
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
 
 <!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 <!-- Plugins -->
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css-3/plugins.css" />
@@ -48,18 +48,36 @@
 
 <div class="page-wrapper">
  	
-    <!-- Preloader -->
-    <div class="preloader"></div>
+  
  	
     <!-- Main Header-->
     <header class="main-header">
-    	
+	<div class="header-top" style="background-color:#85744f;">
+            <div class="auto-container clearfix">
+			
+				<!-- Top Left -->
+                <div class="top-left clearfix">
+                    <!-- Info List -->
+					<ul class="info-list clearfix">
+                        <li class="gg-dark-mode"></li>
+						<li class="gg-insert-after"></li>
+                        <span class="bi bi-badge-ar" style="color:#ffffff">Ar</span>
+                    </ul>
+                </div>
+				<div class="top-right clearfix">
+				<input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
+					<!-- Social Links -->
+					
+                </div>
+				
+            </div>
+        </div>
     	<!--Header-Upper-->
         <div class="header-upper">
         	<div class="outer-container">
             	<div class="clearfix">
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/Logo-02.png" alt="" title=""></a></div>
+                    	<div class="logo fordark"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/Logo-02.png" alt="" title=""></a></div>
                     </div>
 					<div class="nav-outer clearfix">
                     
@@ -78,7 +96,7 @@
 
 							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li class="dropdown"><a href="#">ABOUT US</a>
+									<li class="dropdown"><a href="<?php echo home_url(); ?>/about-us/introduction/">ABOUT US</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/about-us/introduction/">Introduction</a></li>
 											<li><a href="<?php echo home_url(); ?>/about-us/our-ethos/">Our ethos</a></li>
@@ -89,14 +107,14 @@
 									</li>
 									<li><a href="<?php echo home_url(); ?>/our-governance/">OUR GOVERNANCE</a></li>
 
-									<li class="dropdown"><a href="#">OUR PEOPLE</a>
+									<li class="dropdown"><a href="<?php echo home_url(); ?>/our-people/leadership/">OUR PEOPLE</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/our-people/leadership/">Leadership</a></li>
 											<li><a href="<?php echo home_url(); ?>/our-people/board-of-directors/">Board of Directors</a></li>
 											<li><a href="<?php echo home_url(); ?>/our-people/investment-committee/">Investment Committee</a></li>
 										</ul>
 									</li>
-									<li class="dropdown"><a href="#">OUR BUSINESS</a>
+									<li class="dropdown"><a href="<?php echo home_url(); ?>/our-business/introduction/">OUR BUSINESS</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/our-business/introduction/">Introduction</a></li>
 											<li><a href="<?php echo home_url(); ?>/our-business/our-investment-platforms/">Investment platforms </a></li>
@@ -123,7 +141,7 @@
         	<div class="auto-container clearfix">
             	<!--Logo-->
             	<div class="logo pull-left">
-                	<a href="index.html" class="img-responsive"><img src="<?php bloginfo('template_url'); ?>/images/Logo-04.png" alt="" title=""></a>
+                	<a href="<?php echo home_url(); ?>" class="img-responsive"><img src="<?php bloginfo('template_url'); ?>/images/Logo-04.png" alt="" title=""></a>
                 </div>
                 
                 <!--Right Col-->
@@ -147,7 +165,7 @@
             
             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             <nav class="menu-box">
-            	<div class="nav-logo"><a href="index.html"><img src="<?php bloginfo('template_url'); ?>/images/nav-logo.png" alt="" title=""></a></div>
+            	<div class="nav-logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/nav-logo.png" alt="" title=""></a></div>
                 
                 <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
             </nav>
