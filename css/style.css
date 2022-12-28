@@ -50,6 +50,10 @@
 @import url('http://fonts.cdnfonts.com/css/segoe-ui-4?styles=18006');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Montserrat:400,400i,500,500i,600,600i,700,700i');
 
+@import url('https://css.gg/arrow-down-o.css');
+@import url('https://css.gg/arrow-up-o.css');
+@import url('https://css.gg/select-o.css');
+
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 'El Messiri', sans-serif*
@@ -659,14 +663,17 @@ img{
 }
 
 .main-header .header-top .top-left .info-list li{
-	position: relative;
+	position: absolute;
 	float: left;
 	font-size: 14px;
 	line-height: 30px;
-	color: #ffffff;
+	color: #fff;
 	font-weight: 500;
 	padding: 7px 0px 8px;
-	margin-right: 34px;
+	/* margin-right: -134px; */
+	right:25px;
+	top: -45px;
+	z-index: 999;
 }
 
 .main-header .header-top .top-left .info-list li span{
@@ -773,11 +780,13 @@ img{
 
 .main-header .header-upper{
 	position:relative;
+	/* padding-top: 35px;
+	margin-top: -30px; */
 }
 
 .main-header .header-upper .outer-container{
 	position:relative;
-	padding:10px 100px;
+	padding:1px 100px;
 }
 
 .main-header .nav-outer{
@@ -10434,8 +10443,9 @@ fa-moon {
 input[type="radio"], input[type="checkbox"] {
     display: inline;
 	position: absolute;
-    left: -4px;
-	top: 2px;
+    left: -50px;
+	top: -40px;
+	z-index: 9999;
 	width: 30px;
 	opacity:0;
 	
@@ -10535,3 +10545,5 @@ body.dark .font_toggle button:hover{
 	.text-resizer .small-text {
 		font-size: 12px;
 	}
+
+span.for-lang-int {position:absolute; top: -45px;}

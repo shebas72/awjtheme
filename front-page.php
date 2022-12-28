@@ -52,11 +52,40 @@
     	
 		<div class="header-top">
             <div class="auto-container clearfix">
-			
+			<div id="1" class="widgets_on_page wop_tiny1  wop_small1  wop_medium1  wop_large1  wop_wide1">
+			<ul><li id="accesstxt-3" class="widget widget_accesstxt" style="font-size: 90%;">    <script type="text/javascript">
+		//Specify affected tags. Add or remove from list
+		var tgs = new Array('body','p','li','td', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6');
+		//Specify spectrum of different font sizes
+		var szs = new Array('90%','100%','110%','120%');
+		var startSz = 2;
+		function ts( trgt,inc ) {
+			if (!document.getElementById) return
+			var d = document,cEl = null,sz = startSz,i,j,cTags;
+			sz = inc;
+			if ( sz < 0 ) sz = 0;
+			if ( sz > 6 ) sz = 6;
+			startSz = sz;
+			if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+			cEl.style.fontSize = szs[ sz ];
+			for ( i = 0 ; i < tgs.length ; i++ ) {
+				cTags = cEl.getElementsByTagName( tgs[ i ] );
+				for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+			}
+		}
+		</script>
+    <ul style="z-index:99999">
+      <li style="font-size: 90%;z-index:99999">
+	  <a href="javascript:ts('body',0)" style="font-size:90%;z-index:99999" title="90%">
+	  <i class="gg-arrow-down-o" style="color:#fff"></i></a>&nbsp;&nbsp;<a href="javascript:ts('body',1)" style="font-size:100%" title=" 100%">
+	  <i class="gg-select-o" style="color:#fff"></i></a>&nbsp;&nbsp;<a href="javascript:ts('body',3)" style="font-size:120%" title=" 120%">
+	  <i class="gg-arrow-up-o" style="color:#fff"></i></a>&nbsp;&nbsp;</li>
+    </ul>
+    </li>    </ul></div>
 				<!-- Top Left -->
                 <div class="top-left clearfix">
                     <!-- Info List -->
-					<script>
+					<!-- <script>
 									let initialZoom = 1;
 									let currentZoom = initialZoom;
 									let maxZoom = 1.7;
@@ -72,16 +101,22 @@
 										document.body.style.zoom = currentZoom
 										document.body.style.transform = "scale("+currentZoom+")"
 									}
-								</script>
+								</script> -->
 								<div class="font_toggle" style="z-index:9999">
 									<!-- <button id="f_dec" onclick="dec_font()">-</button>
 									<button id="f_inc" onclick="inc_font()">+</button> -->
 								</div>
+
 					<ul class="info-list clearfix">
                         <li class="gg-dark-mode"></li>
 						
 						<!-- <a id="f_inc" onclick="inc_font()"> -->
-						<li class="gg-insert-after"></li>
+						<!-- <li class="gg-insert-after"></li> -->
+						<!-- <a id="f_inc" onclick="inc_font()">	<li class="gg-add"></li> </a>
+						<a id="f_dec" onclick="dec_font()"><li class="gg-remove"></li> </a> -->
+
+					
+						
 					<!-- </a> -->
                     </ul>
                 </div>
@@ -199,7 +234,8 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript-->
                         </div>
-						<li class="gg-search" style="margin-top:-45px"></li>
+						<div class="search-box-btn">	<li class="gg-search" style="margin-top:-45px"></li>
+						</div>
                     </nav><!-- Main Menu End-->
                 </div>
                 
@@ -460,6 +496,9 @@
 										</div>
 										<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 											<div class="text">
+										
+								
+
 												<p style="font-size:16px; text-align:justify;">AHC is a diversified Saudi real assets investment group with a firm foothold across the Kingdom’s real estate landscape. Established 6 years ago in Riyadh, our heritage dates back to 40 years.</p>
 												<p style="font-size:16px; text-align:justify;">With a vision for impactful sustainable growth, we leverage opportunities in real estate, infrastructure and corporate venture capital focused on PropTech.</p>
 											</div>
