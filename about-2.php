@@ -8,8 +8,8 @@
 			<div class="content">
 				<h2><?php echo get_the_title(); ?></h2>
 				<ul class="page-breadcrumb">
-					<li>Home</li>
-					<li>Our Business</li>
+					<li><a style="color:#fff" href="<?php echo home_url(); ?>">Home</a></li>
+					<li><a style="color:#fff" href="<?php echo home_url(); ?>/our-business/introduction/">Our Business</a></li>
 					<li><a href="#"><?php echo get_the_title(); ?></a></li>
 				</ul>
 			</div>

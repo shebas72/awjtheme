@@ -36,6 +36,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+<?php wp_head(); ?>
 </head>
 
 <!---------------------------- Start Main Header ------------------------------->
@@ -57,7 +58,7 @@
 		//Specify affected tags. Add or remove from list
 		var tgs = new Array('body','p','li','td', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6');
 		//Specify spectrum of different font sizes
-		var szs = new Array('90%','100%','110%','120%');
+		var szs = new Array('90%','100%','110%','105%');
 		var startSz = 2;
 		function ts( trgt,inc ) {
 			if (!document.getElementById) return
@@ -123,7 +124,7 @@
 				
 				<!-- Top Right -->
                 <div class="top-right clearfix">
-				<input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
+				<input type="checkbox" class="toggle-checkbox switch-trigger">
 					<!-- Social Links -->
 					
                 </div>
@@ -185,6 +186,7 @@
 										</ul>
 									</li>
 									<li><a href="<?php echo home_url(); ?>/careers/">CAREERS</a></li>
+									<li><a href="#" class="lang_new_color">AR</a></li>
                                 </ul>
                             </div>
 						</nav>
@@ -195,11 +197,20 @@
 							<button id="f_inc" onclick="inc_font()">A</button>
 						</div>-->
 						<div class="outer-box">
-							<div class="search-box-btn"><li class="gg-search" style="margin-top:0px"></li></div>
+                            <li class="fa fa-search" style="margin-top:43px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+						</div>
+                        <div class="outer-box">
+                            <li class="gg-dark-mode" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+                        </div>
+                        <div class="outer-box">
+							<li class="fa fa-language" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
 						</div>
 						<div class="outer-box">
-							<div class="lang-box-btn">Ar</div>
+							<div class="search-box-btn"><li class="gg-search" style="margin-top:0px"></li></div>
 						</div>
+						<!-- <div class="outer-box">
+							<div class="lang-box-btn">Ar</div>
+						</div> -->
 				</div>
             </div>
         </div>
@@ -845,5 +856,6 @@
         <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/google.maps.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script src="<?php bloginfo('template_url'); ?>/../HTWF/scripts/smooth.scroll.min.js"></script>
+		<?php wp_footer(); ?>
 </body>
 </html>

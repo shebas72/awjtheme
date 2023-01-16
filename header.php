@@ -41,7 +41,7 @@
 
 <!-- Core Style Css -->
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css-3/style.css" />
-
+<?php wp_head(); ?>
 </head>
 
 <body>
@@ -76,7 +76,7 @@
 		//Specify affected tags. Add or remove from list
 		var tgs = new Array('body','p','li','td', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6');
 		//Specify spectrum of different font sizes
-		var szs = new Array('90%','100%','110%','120%');
+		var szs = new Array('90%','100%','110%','105%');
 		var startSz = 2;
 		function ts( trgt,inc ) {
 			if (!document.getElementById) return
@@ -113,7 +113,7 @@
                     </ul>
                 </div>
 				<div class="top-right clearfix">
-				<input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
+				<input type="checkbox" class="toggle-checkbox switch-trigger">
 					<!-- Social Links -->
 					
                 </div>
@@ -183,7 +183,21 @@
             </div>
         </div>
         <!--End Header Upper-->
-        
+		<style>
+			.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-right: -24px !important;
+    float: right;
+	color: #fff;
+}
+		</style>
 		<!--Sticky Header-->
         <div class="sticky-header">
         	<div class="auto-container clearfix">
