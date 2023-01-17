@@ -75,13 +75,13 @@
 			}
 		}
 		</script>
-    <ul style="z-index:99999">
+    <!-- <ul style="z-index:99999">
       <li style="font-size: 90%;z-index:99999">
 	  <a href="javascript:ts('body',0)" style="font-size:90%;z-index:99999" title="90%">
 	  <i class="gg-arrow-down-o" style="color:#fff"></i></a>&nbsp;&nbsp;<a href="javascript:ts('body',1)" style="font-size:100%" title=" 100%">
 	  <i class="gg-select-o" style="color:#fff"></i></a>&nbsp;&nbsp;<a href="javascript:ts('body',3)" style="font-size:120%" title=" 120%">
 	  <i class="gg-arrow-up-o" style="color:#fff"></i></a>&nbsp;&nbsp;</li>
-    </ul>
+    </ul> -->
     </li>    </ul></div>
 				<!-- Top Left -->
                 <div class="top-left clearfix">
@@ -108,23 +108,12 @@
 									<button id="f_inc" onclick="inc_font()">+</button> -->
 								</div>
 
-					<ul class="info-list clearfix">
-                        <li class="gg-dark-mode"></li>
-						
-						<!-- <a id="f_inc" onclick="inc_font()"> -->
-						<!-- <li class="gg-insert-after"></li> -->
-						<!-- <a id="f_inc" onclick="inc_font()">	<li class="gg-add"></li> </a>
-						<a id="f_dec" onclick="dec_font()"><li class="gg-remove"></li> </a> -->
-
-					
-						
-					<!-- </a> -->
-                    </ul>
+				
                 </div>
 				
 				<!-- Top Right -->
                 <div class="top-right clearfix">
-				<input type="checkbox" class="toggle-checkbox switch-trigger">
+				
 					<!-- Social Links -->
 					
                 </div>
@@ -134,7 +123,7 @@
 
     	<!--Header-Upper-->
         <div class="header-upper">
-        	<div class="auto-container">
+        	<div class="auto-container" style="max-width:1400px;">
             	<div class="inner-container clearfix">
                 	<div class="pull-left logo-box">
                     	<div class="logo fordark"><a href="index.php"><img class="for-dark" src="<?php bloginfo('template_url'); ?>/images/Logo-02.png" alt="" title=""></a></div>
@@ -186,7 +175,7 @@
 										</ul>
 									</li>
 									<li><a href="<?php echo home_url(); ?>/careers/">CAREERS</a></li>
-									<li><a href="#" class="lang_new_color">AR</a></li>
+								
                                 </ul>
                             </div>
 						</nav>
@@ -197,16 +186,23 @@
 							<button id="f_inc" onclick="inc_font()">A</button>
 						</div>-->
 						<div class="outer-box">
-                            <li class="fa fa-search" style="margin-top:43px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
-						</div>
+						<div class="search-box-btn">  <li class="fa fa-search" style="margin-top:0px; color:#b99e6d; font-size:20px;"></li> </div>
+						</div> 
                         <div class="outer-box">
-                            <li class="gg-dark-mode" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+                            <li class="gg-dark-mode" style="margin-top:45px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+							<input type="checkbox" class="toggle-checkbox switch-trigger">
                         </div>
                         <div class="outer-box">
-							<li class="fa fa-language" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+							<li class="fa fa-language" style="margin-top:45px;margin-left:15px; color:#b99e6d; font-size:20px;"></li>
 						</div>
+						<!-- <div class="outer-box">
+							<li class="gg-search" style="margin-top:0px"></li></div>
+						</div> -->
 						<div class="outer-box">
-							<div class="search-box-btn"><li class="gg-search" style="margin-top:0px"></li></div>
+						<button id="btn-increase_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; margin-left:40px; color:#b99e6d; font-size:20px;"></li></button>
+						<button id="btn-orig_wp_font_rp" type="button" style=" color:#b99e6d;">A</button>
+	<button id="btn-decrease_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button>
+							
 						</div>
 						<!-- <div class="outer-box">
 							<div class="lang-box-btn">Ar</div>
@@ -244,6 +240,7 @@
                     <nav class="main-menu navbar-expand-md">
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript-->
+							
                         </div>
 						<div class="search-box-btn">	<li class="gg-search" style="margin-top:-45px"></li>
 						</div>

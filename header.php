@@ -52,74 +52,10 @@
  	
     <!-- Main Header-->
     <header class="main-header">
-	<div class="header-top" style="background-color:#85744f;">
-            <div class="auto-container clearfix">
-			<!-- <script>
-									let initialZoom = 1;
-									let currentZoom = initialZoom;
-									let maxZoom = 1.7;
-									function inc_font(){
-										currentZoom = currentZoom + .01
-										if(currentZoom>=maxZoom) currentZoom = maxZoom;
-										document.body.style.zoom = currentZoom
-										document.body.style.transform = "scale("+currentZoom+")"
-									}
-									function dec_font(){
-										currentZoom = currentZoom - .01
-										if(currentZoom<=initialZoom) currentZoom = initialZoom;
-										document.body.style.zoom = currentZoom
-										document.body.style.transform = "scale("+currentZoom+")"
-									}
-								</script> -->
-								<div id="1" class="widgets_on_page wop_tiny1  wop_small1  wop_medium1  wop_large1  wop_wide1">
-			<ul><li id="accesstxt-3" class="widget widget_accesstxt" style="font-size: 90%;">    <script type="text/javascript">
-		//Specify affected tags. Add or remove from list
-		var tgs = new Array('body','p','li','td', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6');
-		//Specify spectrum of different font sizes
-		var szs = new Array('90%','100%','110%','105%');
-		var startSz = 2;
-		function ts( trgt,inc ) {
-			if (!document.getElementById) return
-			var d = document,cEl = null,sz = startSz,i,j,cTags;
-			sz = inc;
-			if ( sz < 0 ) sz = 0;
-			if ( sz > 6 ) sz = 6;
-			startSz = sz;
-			if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
-			cEl.style.fontSize = szs[ sz ];
-			for ( i = 0 ; i < tgs.length ; i++ ) {
-				cTags = cEl.getElementsByTagName( tgs[ i ] );
-				for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
-			}
-		}
-		</script>
-    <ul style="z-index:99999">
-      <li style="font-size: 90%;z-index:99999">
-	  <a href="javascript:ts('body',0)" style="font-size:90%;z-index:99999" title="90%">
-	  <i class="gg-arrow-down-o" style="color:#fff"></i></a>&nbsp;&nbsp;<a href="javascript:ts('body',1)" style="font-size:100%" title=" 100%">
-	  <i class="gg-select-o" style="color:#fff"></i></a>&nbsp;&nbsp;<a href="javascript:ts('body',3)" style="font-size:120%" title=" 120%">
-	  <i class="gg-arrow-up-o" style="color:#fff"></i></a>&nbsp;&nbsp;</li>
-    </ul>
-    </li>    </ul></div>
+	
+           
 				<!-- Top Left -->
-                <div class="top-left clearfix">
-                    <!-- Info List -->
-					<ul class="info-list clearfix">
-                        <li class="gg-dark-mode"></li>
-						<!-- <a id="f_inc" onclick="inc_font()">	<li class="gg-add"></li> </a>
-						<a id="f_dec" onclick="dec_font()"><li class="gg-remove"></li> </a> -->
-					
-                        <span class="bi bi-badge-ar for-lang-int" style="color:#ffffff">Ar</span>
-                    </ul>
-                </div>
-				<div class="top-right clearfix">
-				<input type="checkbox" class="toggle-checkbox switch-trigger">
-					<!-- Social Links -->
-					
-                </div>
-				
-            </div>
-        </div>
+               
     	<!--Header-Upper-->
         <div class="header-upper">
         	<div class="outer-container">
@@ -175,7 +111,22 @@
 							</div>
 							
 						</nav>
-						<!-- Main Menu End-->
+					
+						<div class="outer-box" style="background-color: none;">
+                            <li class="fa fa-search" style="margin-top:43px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+						</div>
+                        <div class="outer-box">
+						<input type="checkbox" class="toggle-checkbox switch-trigger">
+                            <li class="gg-dark-mode" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+                        </div>
+                        <div class="outer-box">
+							<li class="fa fa-language" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+						</div>
+                        <div class="outer-box">
+						<button style="background:none" id="btn-increase_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; margin-left:40px; color:#b99e6d; font-size:20px;"></li></button>
+						
+	<button style="background:none" id="btn-decrease_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button>
+						</div>
 						<div class="search-box-btn"><span class="icon icon-magnifier"></span></div>
 					</div>
 					
