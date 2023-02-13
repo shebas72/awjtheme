@@ -79,7 +79,7 @@
 							</div>
 
 							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
-								<ul class="navigation clearfix">
+								<ul class="navigation clearfix" style="margin-top:15px;">
 									<li class="dropdown"><a href="<?php echo home_url(); ?>/about-us/introduction/">ABOUT US</a>
 										<ul>
 											<li><a href="<?php echo home_url(); ?>/about-us/introduction/">Introduction</a></li>
@@ -112,22 +112,24 @@
 							
 						</nav>
 					
-						<div class="outer-box" style="background-color: none;">
-                            <li class="fa fa-search" style="margin-top:43px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+						<div class="outer-box" style="background-color: none;" >
+						<div class="search-box-btn">  <li class="fa fa-search" style="color:#b99e6d; font-size:20px; margin-top:55px"></li></div>
 						</div>
                         <div class="outer-box">
-						<input type="checkbox" class="toggle-checkbox switch-trigger">
-                            <li class="gg-dark-mode" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+						<input type="checkbox" class="toggle-checkbox switch-trigger" style="opacity:0; margin-top:10px">
+                            <li class="gg-dark-mode" style="margin-top:55px;  margin-left:15px; color:#b99e6d; font-size:20px;"></li>
                         </div>
                         <div class="outer-box">
-							<li class="fa fa-language" style="margin-top:45px; margin-right:15px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+							<li class="fa fa-language" style="margin-top:55px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
 						</div>
                         <div class="outer-box">
-						<button style="background:none" id="btn-increase_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; margin-left:40px; color:#b99e6d; font-size:20px;"></li></button>
+						<div class="a_module_exe font_resizer">
+						<button style="background:none" type="button" class="wah-action-button larger wahout" title="larger font size" aria-label="larger font size"><li class="fa fa-font" style="margin-left:60px; color:#b99e6d; font-size:20px;"></li></button>
 						
-	<button style="background:none" id="btn-decrease_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button>
+	<button style="background:none" type="button" class="wah-action-button smaller wahout" title="smaller font size" aria-label="smaller font size"><li class="fa fa-font" style="margin-top:60px; color:#b99e6d; font-size:12px; "></li></button>
 						</div>
-						<div class="search-box-btn"><span class="icon icon-magnifier"></span></div>
+						</div>
+					
 					</div>
 					
                 </div>
@@ -164,9 +166,30 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
                         </div>
-						<div class="search-box-btn">	<li class="gg-search" style="margin-top:-45px"></li>
-						</div>
+					
                     </nav><!-- Main Menu End-->
+					<div class="outer-box" style="float:right;">
+					<div class="search-box-btn"> <li class="fa fa-search" style="margin-top:23px; margin-right:-45px; margin-left:15px; color:#b99e6d; font-size:20px;"></li> </div>
+                            </div>
+                            <div class="outer-box" style="float:right;">
+							<input type="checkbox" class="toggle-checkbox switch-trigger" style=" position:absolute; top:27px; left:1305px">
+                            <li class="gg-dark-mode" style="margin-top:25px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+                            </div>
+                            <div class="outer-box" style="float:right;">
+                            <li class="fa fa-language" style="margin-top:25px; margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+                            </div>
+                            <div class="outer-box" style="float:right;">
+							<div class="a_module_exe font_resizer">
+
+							<button style="background:none" type="button" class="wah-action-button larger wahout" title="larger font size" aria-label="larger font size">
+								<li class="	fa fa-font" style="margin-top:25px; margin-left:30px; color:#b99e6d; font-size:20px;"></li> 
+							</button>
+							<button style="background:none" type="button" class="wah-action-button smaller wahout" title="smaller font size" aria-label="smaller font size">
+							<li class="	fa fa-font" style="margin-top:25px; color:#b99e6d; font-size:12px;"></li> </button>
+							</div>
+							
+						    </div>
+						
                 </div>
                 
             </div>

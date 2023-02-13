@@ -54,10 +54,11 @@
 		<div class="header-top">
             <div class="auto-container clearfix">
 			<div id="1" class="widgets_on_page wop_tiny1  wop_small1  wop_medium1  wop_large1  wop_wide1">
-			<ul><li id="accesstxt-3" class="widget widget_accesstxt" style="font-size: 90%;">    <script type="text/javascript">
-		//Specify affected tags. Add or remove from list
+			<ul><li id="accesstxt-3" class="widget widget_accesstxt" style="font-size: 90%;">    
+			<!-- <script type="text/javascript">
+	
 		var tgs = new Array('body','p','li','td', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6');
-		//Specify spectrum of different font sizes
+	
 		var szs = new Array('90%','100%','110%','105%');
 		var startSz = 2;
 		function ts( trgt,inc ) {
@@ -74,7 +75,7 @@
 				for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
 			}
 		}
-		</script>
+		</script> -->
     <!-- <ul style="z-index:99999">
       <li style="font-size: 90%;z-index:99999">
 	  <a href="javascript:ts('body',0)" style="font-size:90%;z-index:99999" title="90%">
@@ -193,15 +194,33 @@
 							<input type="checkbox" class="toggle-checkbox switch-trigger">
                         </div>
                         <div class="outer-box">
-							<li class="fa fa-language" style="margin-top:45px;margin-left:15px; color:#b99e6d; font-size:20px;"></li>
+							<li class="fa fa-language" style="margin-top:45px;color:#b99e6d; font-size:20px;"></li>
 						</div>
 						<!-- <div class="outer-box">
 							<li class="gg-search" style="margin-top:0px"></li></div>
 						</div> -->
 						<div class="outer-box">
-						<button id="btn-increase_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; margin-left:40px; color:#b99e6d; font-size:20px;"></li></button>
-						<button id="btn-orig_wp_font_rp" type="button" style=" color:#b99e6d;">A</button>
-	<button id="btn-decrease_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button>
+							
+						<!-- <button id="btn-increase_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; margin-left:40px; color:#b99e6d; font-size:20px;"></li></button>
+						
+	<button id="btn-decrease_wp_font_rp" type="button"><li class="fa fa-font" style="margin-top:45px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button> -->
+	
+
+	
+
+           
+
+            <div class="a_module_exe font_resizer">
+
+                
+
+                <button type="button" class="wah-action-button larger wahout" title="larger font size" aria-label="larger font size"><li class="fa fa-font" style="margin-top:45px; margin-left:40px;color:#b99e6d; font-size:20px;"></li></button>
+				<button type="button" class="wah-action-button smaller wahout" title="smaller font size" aria-label="smaller font size"><li class="fa fa-font" style="margin-top:45px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button>
+
+            </div>
+		
+
+
 							
 						</div>
 						<!-- <div class="outer-box">
@@ -212,20 +231,7 @@
         </div>
     </div>
         <!--End Header Upper-->
-        <style>
-			.gg-search {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 16px;
-    height: 16px;
-    border: 2px solid;
-    border-radius: 100%;
-    margin-right: -24px !important;
-    float: right;
-}
-		</style>
+       
 		<!--Sticky Header-->
         <div class="sticky-header">
         	<div class="auto-container clearfix">
@@ -242,14 +248,37 @@
                             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript-->
 							
                         </div>
-						<div class="search-box-btn">	<li class="gg-search" style="margin-top:-45px"></li>
-						</div>
+					
                     </nav><!-- Main Menu End-->
+					<div class="outer-box" style="float:right;">
+					<div class="search-box-btn"> <li class="fa fa-search" style="margin-top:23px; margin-right:-45px; color:#b99e6d; font-size:20px;"></li> </div>
+                            </div>
+                            <div class="outer-box" style="float:right;">
+							<input type="checkbox" class="toggle-checkbox switch-trigger" style=" position:absolute; top:27px; left:1305px">
+                            <li class="gg-dark-mode" style="margin-top:25px; margin-right:15px;  color:#b99e6d; font-size:20px;"></li>
+                            </div>
+                            <div class="outer-box" style="float:right;">
+                            <li class="fa fa-language" style="margin-top:25px; margin-right:15px; color:#b99e6d; font-size:20px;"></li>
+                            </div>
+                            <div class="outer-box" style="float:right;">
+						
+						
+							<div class="a_module_exe font_resizer">
+
+                
+
+<button type="button" class="wah-action-button larger wahout" title="larger font size" aria-label="larger font size"><li class="fa fa-font" style="margin-top:25px; margin-left:30px;;color:#b99e6d; font-size:20px;"></li></button>
+<button type="button" class="wah-action-button smaller wahout" title="smaller font size" aria-label="smaller font size"><li class="fa fa-font" style="margin-top:25px; color:#b99e6d; font-size:12px; margin-right:15px;"></li></button>
+
+</div>
+                     
+						    </div>
                 </div>
                 
             </div>
         </div>
         <!--End Sticky Header-->
+	
 		
     <!-- Mobile Menu  -->
         <div class="mobile-menu">
@@ -290,7 +319,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"delay":500,"speed":500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <div class="title text-center" style="font-size:30px; font-family:'El Messiri', sans-serif;">Welcome to AHC</div>
+                        <div class="title1 text-center" style="font-size:30px; font-family:'El Messiri', sans-serif; color:#fff">Welcome to AHC</div>
                     </div>
 					
                     <div class="tp-caption "
@@ -309,7 +338,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h2 class="text-center">Where we invest in sustainable real assets</h2>
+					<div class="htwo text-center">Where we invest in sustainable real assets</div>
                     </div>
 					
 					<div class="tp-caption tp-resizeme" 
@@ -355,7 +384,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"delay":500,"speed":500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <div class="title text-center" style="font-size:30px; font-family:'El Messiri', sans-serif;">BEST-IN-CLASS</div>
+					<div class="title1 text-center" style="font-size:30px; font-family:'El Messiri', sans-serif; color:#fff">BEST-IN-CLASS</div>
                     </div>
 					
                     <div class="tp-caption "
@@ -374,7 +403,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h2 class="text-center">Farsighted perspective</h2>
+					<div class="htwo text-center">Farsighted perspective</div>
                     </div>
 					
 					<div class="tp-caption tp-resizeme" 
@@ -420,7 +449,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"delay":500,"speed":500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <div class="title text-center" style="font-size:30px; font-family:'El Messiri', sans-serif;">MULTI-GENERATIONAL VALUE</div>
+					<div class="title1 text-center" style="font-size:30px; font-family:'El Messiri', sans-serif; color:#fff">MULTI-GENERATIONAL VALUE</div>
                     </div>
 					
                     <div class="tp-caption "
@@ -439,7 +468,7 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h2 class="text-center">Sustainable impact to deliver commercial and social value</h2>
+                        <div class="htwo text-center">Sustainable impact to deliver commercial and social value</div>
                     </div>
 					
 					<div class="tp-caption tp-resizeme" 
@@ -505,8 +534,8 @@
 										<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 											<div class="text">
 										
-								
-
+									
+											
 												<p style="font-size:16px; text-align:justify;">AHC is a diversified Saudi real assets investment group with a firm foothold across the Kingdom’s real estate landscape. Established 6 years ago in Riyadh, our heritage dates back to 40 years.</p>
 												<p style="font-size:16px; text-align:justify;">With a vision for impactful sustainable growth, we leverage opportunities in real estate, infrastructure and corporate venture capital focused on PropTech.</p>
 											</div>
@@ -696,9 +725,9 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
 									<ul class="social-links">
-										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-										<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+										<li><a href="https://twitter.com/awjholding" target="_blank"><div class="fa fa-twitter"></div></a></li>
+										<li><a href="https://www.facebook.com/awjholding" target="_blank"><div class="fa fa-facebook-f"></div></a></li>
+										<li><a href="https://www.linkedin.com/company/awj-holding" target="_blank"><div class="fa fa-linkedin"></div></a></li>
 									</ul>
 									<div class="copyright"><span>AWJ Holding Company</span> <br> &copy; All rights reserved.</div>
 								</div>
@@ -731,8 +760,8 @@
                                 <div class="footer-widget contact-widget">
 									<h2>Contact</h2>
 									<ul class="contact-list">
-										<li>Phone : <span><a href="tel:+12345018607">+966 11 419 4499</a></span></li>
-										<li>Email : <span><a href="mailto:info@intenax.net">info@awjholding.com</a></span></li>
+										<li>Phone : <div style="font-size:18px"><a href="tel:+12345018607">+966 11 419 4499</a></div></li>
+										<li>Email : <div style="font-size:18px"><a href="mailto:info@intenax.net">info@awjholding.com</a></div></li>
 										<li><a href="mailto:info@intenax.net">careers@awjholding.com</a></li>
 									</ul>
 								</div>

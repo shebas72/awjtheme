@@ -29,9 +29,9 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
 									<ul class="social-links">
-										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-										<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+									<li><a href="https://twitter.com/awjholding" target="_blank"><div class="fa fa-twitter"></div></a></li>
+										<li><a href="https://www.facebook.com/awjholding" target="_blank"><div class="fa fa-facebook-f"></div></a></li>
+										<li><a href="https://www.linkedin.com/company/awj-holding" target="_blank"><div class="fa fa-linkedin"></div></a></li>
 									</ul>
 									<div class="copyright"><span>AWJ Holding Company</span> <br> &copy; All rights reserved.</div>
 								</div>
@@ -64,8 +64,8 @@
                                 <div class="footer-widget contact-widget">
 									<h2>Contact</h2>
 									<ul class="contact-list">
-										<li>Phone : <span><a href="tel:+12345018607">+966 11 419 4499</a></span></li>
-										<li>Email : <span><a href="mailto:info@intenax.net">info@awjholding.com</a></span></li>
+									<li>Phone : <div style="font-size:18px"><a href="tel:+12345018607">+966 11 419 4499</a></div></li>
+										<li>Email : <div style="font-size:18px"><a href="mailto:info@intenax.net">info@awjholding.com</a></div></li>
 										<li><a href="mailto:info@intenax.net">careers@awjholding.com</a></li>
 									</ul>
 								</div>
